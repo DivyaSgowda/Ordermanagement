@@ -43,9 +43,9 @@ public class OrderController {
 	@Autowired
 	public RestTemplate restTemplate;
 //  	@Value("${userServiceUrl}")
-	public String cartServiceUrl =None;
+	public String cartServiceUrl;
 //  	@Value("${productServiceUrl}")
-	public String productServiceUrl=None;
+	public String productServiceUrl;
 	
 	
 	@RequestMapping("/orders/{buyerId}")
