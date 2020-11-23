@@ -15,6 +15,9 @@ phases:
     commands:
       - echo Logging into Amazon ECR
       - aws --version
+      - sudo apt install awscli
+      - sudo apt-get install python3-pip
+      - sudo pip3 install --upgrade awscli
       - $(aws ecr get-login --no-include-email --region us-east-2)
       - REPOSITORY_URI=	462352741814.dkr.ecr.us-east-2.amazonaws.com/dont_delete_ordermanagement
       - COMMIT_HASH=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-7)
