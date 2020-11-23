@@ -42,10 +42,10 @@ public class OrderController {
 	private OrderService orderservice;
 	@Autowired
 	public RestTemplate restTemplate;
- 	@Value("${userServiceUrl}")
-	public String cartServiceUrl;
- 	@Value("${productServiceUrl}")
-	public String productServiceUrl;
+//  	@Value("${userServiceUrl}")
+	public String cartServiceUrl =None;
+//  	@Value("${productServiceUrl}")
+	public String productServiceUrl=None;
 	
 	
 	@RequestMapping("/orders/{buyerId}")
