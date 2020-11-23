@@ -43,7 +43,7 @@ public class OrderService {
 	@Autowired
 	public RestTemplate restTemplate;
 //  	@Value("${userServiceUrl}")
-	public String userServiceUrl =None;
+	public String userServiceUrl;
 
 	public Integer[] usingRewardPoints(Integer buyerId,Integer eligibleDiscount) {
         String getrewardUrl=userServiceUrl+"rewardPoint/"+buyerId;
