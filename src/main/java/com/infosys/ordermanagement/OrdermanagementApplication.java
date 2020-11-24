@@ -38,10 +38,10 @@ public class OrdermanagementApplication {
  
     }
 
-//     @Bean
-//     public RestTemplate restTemplate(RestTemplateBuilder builder) {
-//         return builder.build();
-//     }
+    @Bean
+    public RestTemplate restTemplate(RestTemplateBuilder builder) {
+        return builder.build();
+    }
 
 //     public static Properties readPropertiesFromS3() {
 
